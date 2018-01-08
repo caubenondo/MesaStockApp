@@ -1,6 +1,7 @@
 import Firebase from 'firebase'
 
 // Initialize Firebase
+// Account: haidworkstudio@gmail.com
 var config = {
   apiKey: "AIzaSyCblL5nOLCNqjgUol9WXZMMHIVZogtRTVc",
   authDomain: "mesastockroom.firebaseapp.com",
