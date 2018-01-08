@@ -2,6 +2,11 @@
 <section>
     <div class="row">
         <div class="col-sm-12 col-md-6">
+            <ms-uploader></ms-uploader>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
             <!-- new item form-->
             <ms-new-item></ms-new-item>
         </div>
@@ -57,6 +62,7 @@
 </template>
 
 <script>
+    import Uploader from "./Upload.vue"
     import NewItem from './NewItem.vue'
     import {
         mapGetters
@@ -68,8 +74,8 @@
 
     export default {
         components: {
-            msNewItem: NewItem
-        
+            msNewItem: NewItem,
+            msUploader: Uploader
         },
         data() {
             return {

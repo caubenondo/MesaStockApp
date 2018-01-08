@@ -14,10 +14,8 @@
         </div>
 
     </div>
-    
     <div class="container">
-      <ms-Footer></ms-Footer>
-      
+      <ms-Footer></ms-Footer>   
     </div>
   </div>
 </template>

@@ -7,10 +7,14 @@ var config = {
   authDomain: "mesastockroom.firebaseapp.com",
   databaseURL: "https://mesastockroom.firebaseio.com",
   projectId: "mesastockroom",
-  storageBucket: "",
+  storageBucket: "mesastockroom.appspot.com",
   messagingSenderId: "153039108851"
 };
 const firebaseApp = Firebase.initializeApp(config);
 const db = firebaseApp.database();
 export const dbInventoryRef = db.ref('inventory');
 export const dbOrdersRef = db.ref('orders');
+
+
+
+ export const dbstorage = firebaseApp.storage();

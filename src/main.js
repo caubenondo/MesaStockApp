@@ -4,8 +4,12 @@ import App from './App.vue'
 import Accounting from 'accounting-js'
 import { routes } from "./routes";
 import { store } from "./store/store.js";
+
+
 Vue.use(VueRouter)
 
+import VueFire from 'vuefire'
+Vue.use(VueFire)
 
 const router = new VueRouter ({
   routes,
