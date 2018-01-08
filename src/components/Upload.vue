@@ -7,15 +7,33 @@
            class="form-control btn btn-small btn-outline-primary" name="uploader" id="uploader" aria-describedby="UploaderHelper" @change="fileBtn($event)">
          <small id="UploaderHelper" class="form-text text-muted">complaint</small>
        </div>
+       <img  alt="itemImage" id="itemImage" >
     </form>
    
 </template>
 
 <script>
+
     import { dbstorage } from "../firebaseConfig"
 
+     dbstorage.ref('files/HipsterCoffee.jpg').getMetadata().then(function (meta) {
+            let image = document.getElementById('itemImage');
+            image.src = meta.downloadURLs[0];
+            console.log(meta.downloadURLs[0]);
+
+        })
+     
+   
     export default {
+       data() {
+           return {
+                'imageLink': ''
+           }
+       },computed:{
+          
+       },
         methods: {
+           
             fileBtn: function ( e) {
                 e.preventDefault();
 
